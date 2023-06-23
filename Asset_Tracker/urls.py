@@ -20,5 +20,8 @@ from Asset_Tracker_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('first',views.first_api,name="testing")
+    path('first/',views.first_api,name="testing"),
+    path('Login/',views.login_page,name="Login_page"),
+    path('authentication/',views.authentication,name="authentication"),
+
 ]
