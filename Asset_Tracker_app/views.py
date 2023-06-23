@@ -16,6 +16,10 @@ def login_page(request):
 
 def authentication(request):
     data = request.form
-    breakpoint()
 
     return HttpResponse("Its done")
+
+
+def index(request):
+
+    return render(request, "AdminLTE-3.2.0/iframe.html")

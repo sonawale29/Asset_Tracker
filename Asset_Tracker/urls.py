@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Asset_Tracker_app import views
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first/',views.first_api,name="testing"),
     path('Login/',views.login_page,name="Login_page"),
     path('authentication/',views.authentication,name="authentication"),
+    path("logout/",RedirectView.as_view(url ="/admin/logout/")),
 
 ]

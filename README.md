@@ -7,4 +7,4 @@
     - IDE installed 
     - Created models table as per the milesstones given
     - Tested models table on Django-Admin page whether its relationship correctly establish
-    -
+    - Customize Admit LTE used for the admin Panel.
